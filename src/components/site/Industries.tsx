@@ -1,11 +1,9 @@
-import { SectionHeader } from "./SectionHeader";
-
 const industries = [
-  { name: "Construction", points: ["Project profitability", "Cash flow forecasting", "Contractor performance analysis"] },
-  { name: "Manufacturing", points: ["Cost structure optimisation", "Production economics", "CAPEX evaluation"] },
-  { name: "Energy & Renewables", points: ["Solar & wind projects", "Energy infrastructure", "Long-horizon project finance"] },
-  { name: "HoReCa", points: ["Unit economics", "Expansion planning", "Location profitability"] },
-  { name: "Logistics", points: ["Fleet economics", "Route profitability", "Working capital management"] },
+  { name: "Строительство", points: ["Рентабельность проектов", "Прогноз денежных потоков", "Анализ работы подрядчиков"] },
+  { name: "Производство", points: ["Оптимизация структуры затрат", "Экономика производства", "Оценка CAPEX"] },
+  { name: "Энергетика и ВИЭ", points: ["Солнечные и ветровые проекты", "Энергетическая инфраструктура", "Проектное финансирование"] },
+  { name: "HoReCa", points: ["Юнит-экономика", "Планирование экспансии", "Рентабельность локаций"] },
+  { name: "Логистика", points: ["Экономика автопарка", "Рентабельность маршрутов", "Управление оборотным капиталом"] },
 ];
 
 export function Industries() {
@@ -15,10 +13,10 @@ export function Industries() {
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
             <span className="gold-rule" />
-            <span className="eyebrow">Industries</span>
+            <span className="eyebrow">Отрасли</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] text-white">
-            Sector expertise across asset-heavy, capital-intensive businesses.
+            Отраслевая экспертиза в капиталоёмких и фондоёмких бизнесах.
           </h2>
         </div>
 
@@ -44,11 +42,10 @@ export function Industries() {
           ))}
           <div className="bg-navy p-8 lg:p-10 flex flex-col justify-between">
             <p className="text-sm text-white/60 leading-relaxed">
-              Engagements are tailored to the operating realities of each sector and the
-              decisions our clients need to make.
+              Каждый проект адаптируется под операционные реалии отрасли и решения, которые предстоит принять клиенту.
             </p>
             <a href="#contact" className="mt-6 inline-flex items-center text-[12px] tracking-[0.2em] uppercase text-gold hover:text-white transition-colors">
-              Discuss your sector →
+              Обсудить ваш сектор →
             </a>
           </div>
         </div>

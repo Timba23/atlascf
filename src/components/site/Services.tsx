@@ -1,12 +1,12 @@
 import { SectionHeader } from "./SectionHeader";
 
 const services = [
-  { n: "01", title: "Financial Modeling", desc: "Financial models for business growth, investment decisions, lenders and investors.", price: "from 120,000 ₽" },
-  { n: "02", title: "Investment Analysis", desc: "NPV, IRR, sensitivity analysis and payback period calculations.", price: "from 150,000 ₽" },
-  { n: "03", title: "Business Plans", desc: "Investor-ready and bank-ready business plans built to institutional standards.", price: "from 180,000 ₽" },
-  { n: "04", title: "Business Valuation", desc: "Market, income and asset-based valuation approaches.", price: "from 100,000 ₽" },
-  { n: "05", title: "CFO as a Service", desc: "Strategic financial management without hiring a full-time CFO.", price: "from 120,000 ₽ / month" },
-  { n: "06", title: "Cash Flow & Profitability", desc: "Budgeting, forecasting and cash flow optimisation.", price: "from 80,000 ₽" },
+  { n: "01", title: "Финансовое моделирование", desc: "Финансовые модели для роста бизнеса, инвестиционных решений, банков и инвесторов.", price: "от 120 000 ₽" },
+  { n: "02", title: "Инвестиционный анализ", desc: "NPV, IRR, анализ чувствительности и расчёт сроков окупаемости.", price: "от 150 000 ₽" },
+  { n: "03", title: "Бизнес-планы", desc: "Бизнес-планы для инвесторов и банков, подготовленные по институциональным стандартам.", price: "от 180 000 ₽" },
+  { n: "04", title: "Оценка бизнеса", desc: "Рыночный, доходный и затратный подходы к оценке.", price: "от 100 000 ₽" },
+  { n: "05", title: "CFO как сервис", desc: "Стратегическое финансовое управление без найма штатного финансового директора.", price: "от 120 000 ₽ / мес." },
+  { n: "06", title: "Денежный поток и рентабельность", desc: "Бюджетирование, прогнозирование и оптимизация cash flow.", price: "от 80 000 ₽" },
 ];
 
 export function Services() {
@@ -14,9 +14,9 @@ export function Services() {
     <section id="services" className="py-24 lg:py-32 bg-background">
       <div className="container-x">
         <SectionHeader
-          eyebrow="Services"
-          title="Advisory built around financial precision."
-          description="A focused service offering for owners, CEOs and CFOs of medium and large businesses."
+          eyebrow="Услуги"
+          title="Консалтинг, построенный на финансовой точности."
+          description="Сфокусированный набор услуг для собственников, генеральных и финансовых директоров среднего и крупного бизнеса."
         />
 
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">

@@ -1,8 +1,8 @@
 export function Footer() {
   const cols = [
-    { h: "Practice", links: ["Services", "Industries", "Case Studies", "Insights"] },
-    { h: "Firm", links: ["About", "Contacts", "Legal", "Confidentiality"] },
-    { h: "Connect", links: ["LinkedIn", "Telegram", "Email", "Phone"] },
+    { h: "Практика", links: ["Услуги", "Отрасли", "Кейсы", "Аналитика"] },
+    { h: "Компания", links: ["О нас", "Контакты", "Правовая информация", "Конфиденциальность"] },
+    { h: "Связаться", links: ["LinkedIn", "Telegram", "Email", "Телефон"] },
   ];
   return (
     <footer className="bg-navy text-white">
@@ -13,7 +13,7 @@ export function Footer() {
             <span className="font-serif text-2xl">Atlas <span className="text-gold">Corporate Finance</span></span>
           </div>
           <p className="mt-6 max-w-sm text-sm text-white/60 leading-relaxed">
-            Boutique corporate finance and strategic advisory for owners of medium and large businesses across Russia and the CIS.
+            Бутиковый корпоративно-финансовый и стратегический консалтинг для собственников среднего и крупного бизнеса в России и СНГ.
           </p>
           <div className="mt-8 text-[11px] tracking-[0.2em] uppercase text-gold">hello@atlas-cf.com</div>
         </div>
@@ -34,7 +34,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x py-6 flex flex-wrap items-center justify-between gap-4 text-[11px] tracking-[0.18em] uppercase text-white/40">
           <span>© {new Date().getFullYear()} Atlas Corporate Finance</span>
-          <span>All Engagements Confidential · NDA Available</span>
+          <span>Все проекты конфиденциальны · NDA по запросу</span>
         </div>
       </div>
     </footer>
