@@ -1,10 +1,10 @@
 import { SectionHeader } from "./SectionHeader";
 
 const articles = [
-  { tag: "Cash Flow", title: "Why profitable businesses still run out of cash.", read: "6 min read" },
-  { tag: "Modeling", title: "Financial modeling mistakes that cost millions.", read: "8 min read" },
-  { tag: "Investment", title: "How banks evaluate investment projects.", read: "7 min read" },
-  { tag: "Construction", title: "Understanding cash flow in construction businesses.", read: "9 min read" },
+  { tag: "Денежный поток", title: "Почему прибыльный бизнес остаётся без денег.", read: "6 мин чтения" },
+  { tag: "Моделирование", title: "Ошибки в финансовых моделях, которые стоят миллионы.", read: "8 мин чтения" },
+  { tag: "Инвестиции", title: "Как банки оценивают инвестиционные проекты.", read: "7 мин чтения" },
+  { tag: "Строительство", title: "Денежные потоки в строительном бизнесе.", read: "9 мин чтения" },
 ];
 
 export function Insights() {
@@ -12,8 +12,8 @@ export function Insights() {
     <section id="insights" className="py-24 lg:py-32 bg-background">
       <div className="container-x">
         <div className="flex items-end justify-between flex-wrap gap-6">
-          <SectionHeader eyebrow="Latest Insights" title="Perspectives from the practice." />
-          <a href="#" className="text-[12px] tracking-[0.2em] uppercase text-navy hover:text-gold transition-colors">All Insights →</a>
+          <SectionHeader eyebrow="Последние материалы" title="Взгляд из практики." />
+          <a href="#" className="text-[12px] tracking-[0.2em] uppercase text-navy hover:text-gold transition-colors">Все материалы →</a>
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border">

@@ -2,22 +2,22 @@ import { SectionHeader } from "./SectionHeader";
 
 const cases = [
   {
-    sector: "Construction",
-    label: "Revenue 1.2 Bn ₽",
-    title: "Restoring cash visibility across a multi-project portfolio.",
-    results: ["Identified 42 M ₽ cash gap", "Improved project visibility", "Reduced financing risk"],
+    sector: "Строительство",
+    label: "Выручка 1,2 млрд ₽",
+    title: "Восстановление прозрачности денежных потоков мультипроектного портфеля.",
+    results: ["Выявлен кассовый разрыв 42 млн ₽", "Прозрачность по проектам", "Снижение риска финансирования"],
   },
   {
-    sector: "Manufacturing",
-    label: "Revenue 650 M ₽",
-    title: "Re-engineering production economics for sustained margin.",
-    results: ["EBITDA improved by 11%", "Optimised production economics", "Better investment decisions"],
+    sector: "Производство",
+    label: "Выручка 650 млн ₽",
+    title: "Пересборка экономики производства для устойчивой маржинальности.",
+    results: ["EBITDA выросла на 11%", "Оптимизирована экономика производства", "Качественные инвестрешения"],
   },
   {
-    sector: "Renewable Energy",
-    label: "Investment 420 M ₽",
-    title: "Structuring a bankable case for a long-horizon energy asset.",
-    results: ["Positive NPV identified", "Reduced investment risk", "Clear financing roadmap"],
+    sector: "Возобновляемая энергетика",
+    label: "Инвестиции 420 млн ₽",
+    title: "Подготовка банковской модели для долгосрочного энергоактива.",
+    results: ["Положительный NPV подтверждён", "Снижен инвестиционный риск", "Чёткая карта финансирования"],
   },
 ];
 
@@ -27,10 +27,10 @@ export function Cases() {
       <div className="container-x">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <SectionHeader
-            eyebrow="Selected Engagements"
-            title="Confidential work. Measurable outcomes."
+            eyebrow="Избранные проекты"
+            title="Конфиденциальная работа. Измеримый результат."
           />
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Client names withheld under NDA</p>
+          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Названия клиентов скрыты согласно NDA</p>
         </div>
 
         <div className="mt-16 grid lg:grid-cols-3 gap-px bg-border">
@@ -44,7 +44,7 @@ export function Cases() {
                 {c.title}
               </h3>
               <div className="mt-8 pt-6 border-t border-border">
-                <span className="eyebrow">Outcomes</span>
+                <span className="eyebrow">Результаты</span>
                 <ul className="mt-4 space-y-2">
                   {c.results.map((r) => (
                     <li key={r} className="text-sm text-foreground/80">— {r}</li>

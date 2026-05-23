@@ -1,10 +1,10 @@
 import { SectionHeader } from "./SectionHeader";
 
 const reasons = [
-  { t: "Decision-Making Confidence", d: "Know the financial consequences before committing capital." },
-  { t: "Growth Through Data", d: "Identify profitable opportunities and hidden inefficiencies." },
-  { t: "Investor & Bank Readiness", d: "Build financial models trusted by investors and lenders." },
-  { t: "Executive-Level Advisory", d: "Insights comparable to an in-house CFO, without the overhead." },
+  { t: "Уверенность в решениях", d: "Понимайте финансовые последствия до того, как вкладывать капитал." },
+  { t: "Рост через данные", d: "Выявляем прибыльные возможности и скрытые неэффективности." },
+  { t: "Готовность к инвесторам и банкам", d: "Финансовые модели, которым доверяют инвесторы и кредиторы." },
+  { t: "Экспертиза уровня СEO", d: "Инсайты, сопоставимые с внутренним CFO, без накладных расходов." },
 ];
 
 export function WhyUs() {
@@ -13,9 +13,9 @@ export function WhyUs() {
       <div className="container-x grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <SectionHeader
-            eyebrow="Why Atlas"
-            title="A partner accountable to your numbers."
-            description="We work alongside owners and executive teams to bring institutional rigour to every financial decision."
+            eyebrow="Почему Atlas"
+            title="Партнёр, отвечающий за ваши цифры."
+            description="Мы работаем вместе с собственниками и топ-менеджментом, привнося институциональную строгость в каждое финансовое решение."
           />
         </div>
         <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border">

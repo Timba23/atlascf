@@ -1,20 +1,18 @@
-import { SectionHeader } from "./SectionHeader";
-
 const quotes = [
   {
-    q: "Atlas brought the kind of financial clarity our board had been asking for. Their model became the basis for every capital decision we made last year.",
-    a: "Owner, Construction Group",
-    m: "Revenue 2.4 Bn ₽",
+    q: "Atlas принёс ту финансовую ясность, которую давно ждал совет директоров. Их модель легла в основу всех решений по капиталу за последний год.",
+    a: "Собственник, строительная группа",
+    m: "Выручка 2,4 млрд ₽",
   },
   {
-    q: "Working with Atlas felt closer to having a senior CFO in the room than hiring a consultant. The depth of analysis was institutional.",
-    a: "Chief Executive Officer, Manufacturing",
-    m: "Revenue 650 M ₽",
+    q: "Работа с Atlas скорее напоминала наличие senior CFO в команде, чем сотрудничество с консультантом. Глубина анализа институционального уровня.",
+    a: "Генеральный директор, производство",
+    m: "Выручка 650 млн ₽",
   },
   {
-    q: "Their valuation and project model gave our investment committee the confidence to commit. Rigorous, transparent and defensible.",
-    a: "Principal Investor, Energy Sector",
-    m: "Project 420 M ₽",
+    q: "Их оценка и проектная модель дали инвесткомитету уверенность принять решение. Строго, прозрачно и обоснованно.",
+    a: "Принципал, энергетический инвестор",
+    m: "Проект 420 млн ₽",
   },
 ];
 
@@ -25,17 +23,17 @@ export function Testimonials() {
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
             <span className="gold-rule" />
-            <span className="eyebrow">Client Voices</span>
+            <span className="eyebrow">Отзывы клиентов</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] text-white">
-            Trusted by owners, executives and investors.
+            Нам доверяют собственники, руководители и инвесторы.
           </h2>
         </div>
 
         <div className="mt-16 grid lg:grid-cols-3 gap-px bg-white/10">
           {quotes.map((t, i) => (
             <figure key={i} className="bg-navy p-8 lg:p-10 flex flex-col">
-              <span className="font-serif text-5xl text-gold leading-none">“</span>
+              <span className="font-serif text-5xl text-gold leading-none">«</span>
               <blockquote className="mt-4 font-serif text-xl text-white/90 leading-snug flex-1">
                 {t.q}
               </blockquote>

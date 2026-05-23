@@ -16,17 +16,17 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Atlas Corporate Finance — Boutique Financial Advisory" },
+      { title: "Atlas Corporate Finance — Бутиковый финансовый консалтинг" },
       {
         name: "description",
         content:
-          "Boutique corporate finance and strategic advisory. Financial modeling, investment analysis, business valuation and CFO advisory for medium and large businesses.",
+          "Бутиковый корпоративно-финансовый и стратегический консалтинг. Финансовое моделирование, инвестиционный анализ, оценка бизнеса и CFO-сопровождение для среднего и крупного бизнеса.",
       },
       { property: "og:title", content: "Atlas Corporate Finance" },
       {
         property: "og:description",
         content:
-          "Helping business owners make financial decisions based on facts, not assumptions.",
+          "Помогаем собственникам принимать финансовые решения на основе фактов, а не предположений.",
       },
     ],
   }),

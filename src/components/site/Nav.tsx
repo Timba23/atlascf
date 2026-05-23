@@ -1,11 +1,11 @@
 export function Nav() {
   const links = [
-    { href: "#services", label: "Services" },
-    { href: "#industries", label: "Industries" },
-    { href: "#cases", label: "Case Studies" },
-    { href: "#process", label: "Process" },
-    { href: "#insights", label: "Insights" },
-    { href: "#contact", label: "Contact" },
+    { href: "#services", label: "Услуги" },
+    { href: "#industries", label: "Отрасли" },
+    { href: "#cases", label: "Кейсы" },
+    { href: "#process", label: "Процесс" },
+    { href: "#insights", label: "Аналитика" },
+    { href: "#contact", label: "Контакты" },
   ];
   return (
     <header className="absolute top-0 left-0 right-0 z-30">
@@ -31,7 +31,7 @@ export function Nav() {
           href="#contact"
           className="hidden lg:inline-flex items-center text-[12px] tracking-[0.18em] uppercase border border-gold/60 text-gold px-5 py-2.5 hover:bg-gold hover:text-navy transition-colors"
         >
-          Book a Consultation
+          Записаться на консультацию
         </a>
       </div>
     </header>
