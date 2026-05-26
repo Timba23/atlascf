@@ -21,20 +21,42 @@ export function Services() {
         />
 
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
-          {services.map((s) => (
-            <article
-              key={s.n}
-              className="group relative p-8 lg:p-10 border-r border-b border-border bg-background hover:bg-surface transition-colors"
-            >
-              <div className="flex items-baseline justify-between mb-8">
-                <span className="font-serif text-3xl text-navy/30">{s.n}</span>
-                <span className="text-[10px] tracking-[0.2em] uppercase text-gold">{s.price}</span>
-              </div>
-              <h3 className="font-serif text-2xl text-navy mb-3">{s.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-              <div className="mt-8 h-px w-8 bg-gold group-hover:w-16 transition-all" />
-            </article>
-          ))}
+          {services.map((s) => {
+            const Card = (
+              <>
+                <div className="flex items-baseline justify-between mb-8">
+                  <span className="font-serif text-3xl text-navy/30">{s.n}</span>
+                  <span className="text-[10px] tracking-[0.2em] uppercase text-gold">{s.price}</span>
+                </div>
+                <h3 className="font-serif text-2xl text-navy mb-3">{s.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                <div className="mt-8 flex items-center justify-between">
+                  <div className="h-px w-8 bg-gold group-hover:w-16 transition-all" />
+                  {s.to && (
+                    <span className="text-[11px] tracking-[0.15em] uppercase text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Подробнее →
+                    </span>
+                  )}
+                </div>
+              </>
+            );
+            return s.to ? (
+              <Link
+                key={s.n}
+                to={s.to}
+                className="group relative p-8 lg:p-10 border-r border-b border-border bg-background hover:bg-surface transition-colors cursor-pointer"
+              >
+                {Card}
+              </Link>
+            ) : (
+              <article
+                key={s.n}
+                className="group relative p-8 lg:p-10 border-r border-b border-border bg-background hover:bg-surface transition-colors"
+              >
+                {Card}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
